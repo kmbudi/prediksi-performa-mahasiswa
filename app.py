@@ -4,7 +4,7 @@ import plotly.express as px
 import plotly.figure_factory as ff
 
 # Styling
-st.set_page_config(page_title="Jaya Jaya Institut Dashboard", layout="wide")
+st.set_page_config(page_title="Budi Institut Dashboard", layout="wide")
 
 # Load Data
 data = pd.read_csv('data/data.csv', sep=';')
@@ -44,14 +44,14 @@ categorical_columns = [
 ]
 
 # Sidebar Menu
-st.sidebar.title("Jaya Jaya Institut Dashboard")
-menu = st.sidebar.selectbox("Pilih Halaman:", ["📊 Business Dashboard", "🔍 Prediction Page"])
+st.sidebar.title("Budi Institut Dashboard")
+menu = st.sidebar.selectbox("Pilih Halaman:", ["📊 Data Dashboard", "🔍 Prediction Page"])
 
 # =======================
 # 📊 Business Dashboard
 # =======================
-if menu == "📊 Business Dashboard":
-    st.title("📊 Business Dashboard - Students' Performance")
+if menu == "📊 Data Dashboard":
+    st.title("📊 Data Dashboard - Students' Performance")
     
     # Overview Metrics
     st.write("## 🎓 **Overview Metrics**")
